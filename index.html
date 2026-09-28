@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <title>Document</title>
+    <style>
+
+        header {
+            padding: 1.3rem;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            background-color: aliceblue;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+            /* transition: move 0.8s ease; */
+            animation: move 0.8s ease ;
+        }
+
+        @keyframes move {
+
+            from {
+                opacity: 0;
+                transform: translateY(70px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            
+        }
+  
+    .first {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        z-index: 2;
+        background-color: rgb(7, 209, 142);
+    }
+    .second {
+        left: 40px;
+        top: 40px;
+        z-index: 1;
+        position: relative;
+
+        width: 200px;
+        height: 200px;
+        background-color: rgb(104, 104, 231);
+
+    }    
+
+    span {
+        background-color: rgb(3, 171, 171);
+        width: 20px;
+        height: 20px;
+        color: white;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">BARBER</div>
+        <nav>
+            <a href="#">HOEM</a>
+            <a href="#">HOEM</a>
+            <a href="#">HOEM</a>
+            <a href="#">HOEM</a>
+        </nav>
+        <div class="profile-card">
+
+            <a href="https://www.google.com/search?q=linkedin&oq=link&gs_lcrp=EgZjaHJvbWUqBwgBEAAYjwIyBggAEEUYOTIHCAEQABiPAjIHCAIQABiPAjIHCAMQABiPAjIGCAQQRRg9MgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEINDM2NWowajeoAgiwAgHxBTqLrxoU7Sfj&sourceid=chrome&source=chrome.ob&ie=UTF-8"><span><i class="fa-jelly-fill fa-regular fa-user"></i></span></a>
+            
+            <!-- <span><img src="user.png" alt=""></span> -->
+
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="first"></div>
+            <div class="second"></div>
+
+
+        </section>
+    </main>
+</body>
+</html>
